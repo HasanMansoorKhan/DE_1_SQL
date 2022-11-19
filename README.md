@@ -21,7 +21,14 @@ The relational dataset is linked via unique IDs in each table, as shown in the E
 
 # 2. ANALYTICS PLAN:
 
-My analytical plan includes to use the four tables extracted using the operational layer. I will add an analytical layer where I will generate a new table for sales category information. This will be a denormalized structure made using a stored produre. Once the procedure is called a new table will be returned which includes important sales information for analysis and only columns that are pertinent to the scope of the analysis will be included.
+My analytical plan includes to use the four tables extracted using the operational layer. I will add an analytical layer where I will generate a new table for sales category information. This will be a denormalized structure made using a stored produre. Once the procedure is called a new table will be returned which includes important sales information for analysis and only columns that are pertinent to the scope of the analysis will be included. 
+
+## Important analytics:
+1. WHICH PIZZA MADE THE MOST IN REVENUE?  
+2. WHAT IS THE TOP PIZZA CATEGORY?  
+3. WHAT IS THE MOST COMMON PIZZA QUANTITY ORDERED  
+4. PIZZAS BY NUMBER OF INGREDIENTS.
+5. WHICH PIZZAS WERE POPULAR AND WHICH PIZZAS WERE UNPOPULAR? 
 
 # 3. ANALYTICAL LAYER:
 After the operational layer & analytical plan is completed, the basis of my analysis has been established. I now proceed to use SQL code to create a stored procedure which create sales category. This will return a table including name, category, revenue & number of ingredients. The new table is made using the followung joins: 
@@ -35,6 +42,36 @@ The analytical layer includes new columns which are instrumental for analysis an
 
 
 # 4. DATA MARTS
+
+Data marts or views are created using SQL code for answering the specific questions of the analytical plan. The questions are solved using SQL functions taught in class such as aggregations, joins, conditions and more.
+
+## DATA MART 1. WHICH PIZZA MADE THE MOST IN REVENUE?  
+
+Answer: Thai Chicken Pizza made the most revenue with USD 43,434 in the given year 
+
+
+
+
+## DATA MART 2. WHAT IS THE TOP PIZZA CATEGORY?  
+
+Answer: Classic category is the top category in quantity and revenue. 
+
+
+
+
+
+## DATA MART 3. WHAT IS THE MOST COMMON PIZZA QUANTITY ORDERED  
+
+The maximum number of orders received were for 1 pizza
+
+## DATA MART 4. PIZZAS BY NUMBER OF INGREDIENTS.
+
+The pizzas with most ingredients were pizzas that needed 8 ingredients & the least number of ingredients was 2 
+
+
+## DATA MART 5. WHICH PIZZAS WERE POPULAR AND WHICH PIZZAS WERE UNPOPULAR? 
+
+Pizzas with sales of less than 1000 in quantity are categorised as unpopular while sales greater than 1000 are categorised as popular 
 
 # 4. CONLCUSION
 
