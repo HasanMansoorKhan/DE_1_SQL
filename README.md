@@ -1,4 +1,4 @@
-# DE_1_SQL
+# DE_1_SQL: TERM PROJECT 1
 
 This repository is for Data Engineering 1 using SQL. It contains my term 1 project. For the purpose of my term 1 project, I chose sales data for a fictious Pizza place on the maven analytics data playground. My repository contains files including the operational layer, analytics plan, analytical layer using ETL pipeline, data marts/views using my analytical layer. The repository also includes an EER diagram screenshot & EER mwb file showing the relational dataset. 
 
