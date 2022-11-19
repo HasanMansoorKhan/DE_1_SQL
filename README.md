@@ -96,4 +96,6 @@ Answer: Pizzas with sales of less than 1000 in quantity are categorised as unpop
 
 # 4. CONLCUSION
 
-At the completion of this term project, I found that data engineering using SQL is instrumental in business analytics. The project enabled me to apply the various SQL funtions taught in class. 
+At the completion of this term project, I found that data engineering using SQL is instrumental in business analytics. The project enabled me to apply the various SQL funtions taught in class. The process I followed during this term 1 project was to first find a relational dataset which is suitable for further analysis. I then uploaded the dataset into MYSQL workbench and formulated an analytics plan. Then after using the SQL funtions to analyse, I answered the initial questions of analytics plan by creating 5 specific data marts. These provided answers and detailed insights into the analytical questions. 
+
+I found the term 1 project applicative where the learned class materials were used and analytical queries solved. 
