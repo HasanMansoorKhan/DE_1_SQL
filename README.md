@@ -19,9 +19,16 @@ representing a table.
 
 The relational dataset is linked via unique IDs in each table, as shown in the EER diagram. For. the project I creared a schema: pizza_sales. Then I created 4 emtpty tables using SQL code. Special attention was paid to data type of each column, its Primary Key & whether it can be a Null value or not. I then procceeded with populating the data tables using SQL code for uploading CSVs into SQL. databse. Lastly, I added Foreign Key Constraints for the relevant tables. After adding the foreign key constraints, I used reverse engineering to form an EER diagram. 
 
+## EER DIAGRAM using Reverse Engineering 
+
+<img width="898" alt="ER_diagram" src="https://user-images.githubusercontent.com/113629683/202856153-81755af8-6385-4f6a-936a-7eecba08f898.png">
+
 # 2. ANALYTICS PLAN:
 
 My analytical plan includes to use the four tables extracted using the operational layer. I will add an analytical layer where I will generate a new table for sales category information. This will be a denormalized structure made using a stored produre. Once the procedure is called a new table will be returned which includes important sales information for analysis and only columns that are pertinent to the scope of the analysis will be included. 
+
+<img width="846" alt="Analytical_Plan" src="https://user-images.githubusercontent.com/113629683/202856171-d551bbb8-d361-4ca5-99fa-65d609b5bf9b.png">
+
 
 ## Important analytics:
 1. WHICH PIZZA MADE THE MOST IN REVENUE?  
@@ -38,8 +45,11 @@ After the operational layer & analytical plan is completed, the basis of my anal
 
 Number of records in operational dataset is 48,620 & the new table also includes the same number. Hence the analytical layer is funtional. 
 
+<img width="1680" alt="Star_Schema png " src="https://user-images.githubusercontent.com/113629683/202856224-a4797553-53a2-40e2-a96b-417c2507d79c.png">
+
 The analytical layer includes new columns which are instrumental for analysis and data marts. Firstly, a new revenue column is created which shows the amount in usd that each order, pizza & category generates. Secondly, a new columns counts the number of ingredients used in each pizza. As a result of the stored procedure, the new table sales category allows for insights into categorywise revenue and sales analysis. It allows us to answer specific questions regarding the pizza sales. 
 
+<img width="1109" alt="Sales_category" src="https://user-images.githubusercontent.com/113629683/202856184-866002a6-e074-4f78-9820-63e4990a55b4.png">
 
 # 4. DATA MARTS
 
@@ -57,23 +67,31 @@ Answer: Thai Chicken Pizza made the most revenue with USD 43,434 in the given ye
 
 Answer: Classic category is the top category in quantity and revenue. 
 
+<img width="464" alt="Screenshot 2022-11-19 at 19 32 15" src="https://user-images.githubusercontent.com/113629683/202855940-98c43f89-d1ab-4a82-9431-15c985abd8aa.png">
 
 
 
 
 ## DATA MART 3. WHAT IS THE MOST COMMON PIZZA QUANTITY ORDERED  
 
-The maximum number of orders received were for 1 pizza
+Answer: The maximum number of orders received were for 1 pizza
+
+<img width="464" alt="Screenshot 2022-11-19 at 19 33 48" src="https://user-images.githubusercontent.com/113629683/202856030-ea82b95a-2763-46b7-93b8-7e871f168c7e.png">
+
 
 ## DATA MART 4. PIZZAS BY NUMBER OF INGREDIENTS.
 
-The pizzas with most ingredients were pizzas that needed 8 ingredients & the least number of ingredients was 2 
+Answer: The pizzas with most ingredients were pizzas that needed 8 ingredients & the least number of ingredients was 2 
+
+<img width="963" alt="Screenshot 2022-11-19 at 19 34 35" src="https://user-images.githubusercontent.com/113629683/202856069-3e079f32-ccbc-48b0-9ba4-12d4a3702784.png">
+
 
 
 ## DATA MART 5. WHICH PIZZAS WERE POPULAR AND WHICH PIZZAS WERE UNPOPULAR? 
 
-Pizzas with sales of less than 1000 in quantity are categorised as unpopular while sales greater than 1000 are categorised as popular 
+Answer: Pizzas with sales of less than 1000 in quantity are categorised as unpopular while sales greater than 1000 are categorised as popular 
 
+<img width="554" alt="Screenshot 2022-11-19 at 19 35 09" src="https://user-images.githubusercontent.com/113629683/202856100-6b227417-30ac-487f-9716-a1039146f98e.png">
 
 
 # 4. CONLCUSION
