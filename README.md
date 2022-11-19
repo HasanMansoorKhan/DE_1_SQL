@@ -21,8 +21,17 @@ The relational dataset is linked via unique IDs in each table, as shown in the E
 
 # 2. ANALYTICS PLAN:
 
+My analytical plan includes to use the four tables extracted using the operational layer. I will add an analytical layer where I will generate a new table for sales category information. This will be a denormalized structure made using a stored produre. Once the procedure is called a new table will be returned which includes important sales information for analysis and only columns that are pertinent to the scope of the analysis will be included.
 
 # 3. ANALYTICAL LAYER:
+After the operational layer & analytical plan is completed, the basis of my analysis has been established. I now proceed to use SQL code to create a stored procedure which create sales category. This will return a table including name, category, revenue & number of ingredients. The new table is made using the followung joins: 
+
+1. pizza table and order Details_table using pizza_id
+2. pizza table and pizza_types table using pizza_type_id
+
+Number of records in operational dataset is 48,620 & the new table also includes the same number. Hence the analytical layer is funtional. 
+
+The analytical layer includes new columns which are instrumental for analysis and data marts. Firstly, a new revenue column is created which shows the amount in usd that each order, pizza & category generates. Secondly, a new columns counts the number of ingredients used in each pizza. As a result of the stored procedure, the new table sales category allows for insights into categorywise revenue and sales analysis. It allows us to answer specific questions regarding the pizza sales. 
 
 
 # 4. DATA MARTS
