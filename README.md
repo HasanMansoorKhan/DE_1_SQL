@@ -49,6 +49,7 @@ Data marts or views are created using SQL code for answering the specific questi
 
 Answer: Thai Chicken Pizza made the most revenue with USD 43,434 in the given year 
 
+<img width="493" alt="Screenshot 2022-11-19 at 19 31 25" src="https://user-images.githubusercontent.com/113629683/202855903-d2e41c3a-1074-4e11-b4ab-cda51fecb43c.png">
 
 
 
@@ -73,5 +74,8 @@ The pizzas with most ingredients were pizzas that needed 8 ingredients & the lea
 
 Pizzas with sales of less than 1000 in quantity are categorised as unpopular while sales greater than 1000 are categorised as popular 
 
+
+
 # 4. CONLCUSION
 
+At the completion of this term project, I found that data engineering using SQL is instrumental in business analytics. The project enabled me to apply the various SQL funtions taught in class. 
